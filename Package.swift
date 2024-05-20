@@ -5,17 +5,21 @@ import PackageDescription
 
 let package = Package(
     name: "CustomTagPeopleTextView",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "CustomTagPeopleTextView",
             targets: ["CustomTagPeopleTextView"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "CustomTagPeopleTextView"),
+            name: "CustomTagPeopleTextView",
+            resources: [
+                    .process("Resources/CustomTagPeopleTextView.xib")
+                ]
+        ),
         .testTarget(
             name: "CustomTagPeopleTextViewTests",
             dependencies: ["CustomTagPeopleTextView"]),
