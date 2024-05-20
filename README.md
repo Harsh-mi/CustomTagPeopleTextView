@@ -2,7 +2,7 @@
 
 ## Installation
 
-- To install this package, import `https://github.com/Harsh-mi/CustomTagPeopleTextView.git` in SPM.
+- To install this package, import `https://github.com/Harsh-mi/CustomTagPeopleTextView` in SPM.
 - iOS version should be eqaul or greater than 13.0
 
 ## How to use CustomTagPeopleTextView
